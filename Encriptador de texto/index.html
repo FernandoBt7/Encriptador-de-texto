@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <div class="logo-alura"><img src="imagenes/Logo.png" alt="logo-alura"></div>
+        
+    </header>
+    <main>
+            <!--sección de encriptar-->
+        <section class="section1">
+            <div class="Titulo">
+                <div class="titulo-encriptador">Encriptador de texto</div>
+            </div>
+            <!--Ingrese el texto-->
+            <div class="encriptador">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí" class="placeholder"></textarea>              
+            </div>
+          
+            <!--aviso alerta--> 
+            <div class="aviso-alerta">
+                <img class="imagen-aviso" src="imagenes/aviso.svg" alt="img-aviso">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <!--botones-->
+            <div class="contenedor-botones">
+                <div>
+                    <button class="boton-encriptar">Encriptar</button>
+                </div>
+                <div>
+                    <button class="boton-desencriptar">Desencriptar</button>            
+                </div>
+            </div>
+            
+        </section>
+        <!--sección de desencriptar e imagen-->
+        <section class="section2">
+            <div class="muneco">
+                <img src="imagenes/Muñeco.png" alt="muneco">
+            </div>
+            <div class="ningun-texto-encontrado">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea class="mensaje" name="mensaje" id="mensaje" cols="25" rows="4" readonly></textarea>
+            <div>
+                <button class="boton-copiar">Copiar</button>
+            </div>
+            
+        </section>
+        
+    </main>
+    
+    <!--footer-->
+    <footer>
+        <p>&copy; copyright 2024 -encriptador de texto - desarrollado por FBT</p>
+        <a href="#" rel="#">
+            <img class="img-linkedin" src="imagenes/linkedin.svg" alt="img de linkedin">
+        </a>
+        <a href="#" rel="#">
+            <img class="img-github" src="imagenes/github.svg" alt="img de github">
+        </a>
+        
+    </footer>
+
+    <script src="encriptador.js"></script>
+</body>
+</html>
